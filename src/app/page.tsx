@@ -1,16 +1,16 @@
 // src/app/page.tsx
 import React from 'react';
-import FaceVerification from './components/FaceVerification';
 import { Container, CssBaseline, Typography } from '@mui/material';
+import FaceRecognition from './components/FaceRecognition';
 
-const HomePage: React.FC = () => {
+function HomePage() {
     return (
-        <Container component="main" maxWidth="md">
+        <Container component="main" sx={{alignItems:'center', alignContent:'center'}}>
             <CssBaseline />
-            <Typography component="h1" variant="h4" align="center" gutterBottom>
+            {/* <Typography component="h1" variant="h4" align="center" gutterBottom>
                 Face Verification
-            </Typography>
-            <FaceVerification />
+            </Typography> */}
+            <FaceRecognition />
         </Container>
     );
 };
